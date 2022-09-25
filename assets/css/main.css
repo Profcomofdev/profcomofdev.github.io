@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  max-width: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: inherit;
+  color: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  background-color: #fff;
+  background-image: url("../images/back-large.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    background-size: contain;
+    background-image: url("../images/back-mobile.svg");
+  }
+}/*# sourceMappingURL=main.css.map */

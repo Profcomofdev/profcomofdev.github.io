@@ -1,0 +1,25 @@
+@import 'global';
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    background-color: #fff;
+    background-image: url('../images/back-large.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height:100%;
+    width:100%;
+    display: flex;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 600px){
+    .main{
+        background-size: contain;
+        background-image: url('../images/back-mobile.svg');
+    }
+}
