@@ -22,7 +22,7 @@ body {
 
 .main {
   background-color: #fff;
-  background-image: url("../images/back-large.svg");
+  /*background-image: url('../images/back-large.svg');*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -32,9 +32,30 @@ body {
   min-height: 100vh;
 }
 
+.backanim {
+  display: none;
+}
+
+.backanim > svg {
+  max-width: 100%;
+}
+
 @media screen and (max-width: 600px) {
-  .main {
-    background-size: contain;
-    background-image: url("../images/back-mobile.svg");
+  /*.main{
+      background-size: contain;
+      background-image: url('../images/back-mobile.svg');
+  }
+  */
+  .backanim {
+    max-width: 100%;
+    height: auto;
+  }
+  .backanim.mobile-svg {
+    display: block;
+  }
+}
+@media screen and (min-width: 600px) {
+  .backanim.pc-svg {
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */

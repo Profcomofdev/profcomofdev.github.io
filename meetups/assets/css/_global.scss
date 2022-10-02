@@ -1,0 +1,35 @@
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width:100%;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+@for $i from 1 through 6 {
+    h#{7 - $i} {
+        font-size: $i * 1.4em;
+    }
+}
+
+a, a:link, a:active, a:disabled{
+    text-decoration: none;
+    color:inherit;
+}
+
+a:hover{
+    text-decoration: none;
+}
