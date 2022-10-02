@@ -98,8 +98,16 @@ a.btn {
     text-decoration: none;
 }
 
+
+.preview > img {
+    max-width: 100%;
+    width:100%;
+    height: auto;
+    border-radius: 5px 5px 0px 0px;
+}
+
 .preview {
-    height: 150px;
+    padding: 0px !important;
     background: $main-color;
     border-radius: 5px 5px 0px 0px;
 }
