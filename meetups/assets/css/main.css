@@ -21,27 +21,33 @@ body {
 }
 
 h6 {
-  font-size: 1.4em;
+  font-size: 0.5em;
+  margin: 5px 0px;
 }
 
 h5 {
-  font-size: 2.8em;
+  font-size: 1em;
+  margin: 5px 0px;
 }
 
 h4 {
-  font-size: 4.2em;
+  font-size: 1.5em;
+  margin: 5px 0px;
 }
 
 h3 {
-  font-size: 5.6em;
+  font-size: 2em;
+  margin: 5px 0px;
 }
 
 h2 {
-  font-size: 7em;
+  font-size: 2.5em;
+  margin: 5px 0px;
 }
 
 h1 {
-  font-size: 8.4em;
+  font-size: 3em;
+  margin: 5px 0px;
 }
 
 a, a:link, a:active, a:disabled {
@@ -99,6 +105,34 @@ a:hover {
   main {
     padding: 0px 20px !important;
   }
+  .main-block-info {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .main-block-right {
+    position: static;
+    left: 0px;
+    width: 100%;
+    margin-left: 0px !important;
+    margin-bottom: 20px;
+    max-width: 800px !important;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .main-block-info {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .main-block-right {
+    position: static;
+    left: 0px;
+    width: 100%;
+    margin-left: 0px !important;
+    margin-bottom: 20px;
+    max-width: 800px !important;
+  }
 }
 header {
   border-bottom: 1px solid #dedede;
@@ -106,6 +140,11 @@ header {
   justify-content: space-between;
   padding: 3px 20px;
   align-items: center;
+  background: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 100000000;
 }
 
 logo > img {
@@ -211,4 +250,82 @@ a.btn {
 
 a.btn:hover {
   background: #9a4aff;
+}
+
+.blocking_background > img {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.main-block-left {
+  max-width: 800px;
+  background: #fff;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.main-block-left img {
+  max-width: 100%;
+}
+
+.blocking_background {
+  position: absolute;
+  left: 0px;
+  z-index: 0;
+  width: 100%;
+}
+
+.main-block-info {
+  padding-top: 53px;
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 10000;
+  justify-content: center;
+}
+
+.description {
+  padding: 10px 20px;
+}
+
+.main-block-right {
+  max-width: 300px;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 5px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-left: 60px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 70px;
+}
+
+.br_date {
+  font-size: 20px;
+  color: #AFAFAF;
+}
+
+.br_title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.br_leader {
+  font-size: 18px;
+}
+
+.br_leader > a {
+  color: #4a4aff;
+}
+
+.cost {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.description > p, ul, li {
+  font-size: 20px;
 }/*# sourceMappingURL=main.css.map */

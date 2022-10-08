@@ -21,7 +21,8 @@ body{
 
 @for $i from 1 through 6 {
     h#{7 - $i} {
-        font-size: $i * 1.4em;
+        font-size: $i * 0.5em;
+        margin: 5px 0px;
     }
 }
 

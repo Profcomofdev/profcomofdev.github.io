@@ -8,6 +8,10 @@ header {
     justify-content: space-between;
     padding: 3px 20px;
     align-items: center;
+    background: $invert-color;
+    position: sticky;
+    top: 0px;
+    z-index: 100000000;
 }
 
 logo > img {
@@ -114,4 +118,79 @@ a.btn {
 
 a.btn:hover {
     background: $hover-color;
+}
+
+.blocking_background > img {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.main-block-left {
+    max-width: 800px;
+    background: $invert-color;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.main-block-left img {
+    max-width: 100%;
+}
+
+.blocking_background {
+    position: absolute;
+    left: 0px;
+    z-index: 0;
+    width:100%;
+}
+
+.main-block-info {
+    padding-top: 53px;
+    display: flex;
+    width: 100%;
+    position: relative;
+    z-index: 10000;
+    justify-content: center;
+}
+
+.description {
+    padding: 10px 20px;
+}
+
+.main-block-right {
+    max-width: 300px;
+    padding: 30px 20px;
+    background: $invert-color;
+    border-radius: 5px;
+    height: max-content;
+    margin-left: 60px;
+    position: sticky;
+    top: 70px;
+}
+
+.br_date {
+    font-size: 20px;
+    color: #AFAFAF;
+}
+
+.br_title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.br_leader {
+    font-size: 18px;
+}
+
+.br_leader > a {
+    color: $main-color;
+}
+
+.cost {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.description > p, ul, li{
+    font-size: 20px;
 }
