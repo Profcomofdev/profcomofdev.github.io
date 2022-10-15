@@ -1,49 +1,70 @@
 @import 'global';
 
-
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.main{
-    background-color: #fff;
-    /*background-image: url('../images/back-large.svg');*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    height:100%;
-    width:100%;
-    display: flex;
-    min-height: 100vh;
+.main {
+  background-color: #1E1E1E;
+  background-image: url('../images/main-back.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.backanim {
-    display: none;
+nav.nav {display: flex;align-items: center;padding: 10px 20px;}
+
+.menu {flex-grow: 1;text-align: center;}
+
+a.btn {padding: 10px 20px;border: 1px solid#fff;color: #fff;text-decoration: none;border-radius: 50px;}
+
+.menu > a {margin: 0px 15px;font-size: 20px;color: #fff;text-decoration: none;}
+
+.center-b-nav {display: flex;flex-direction: column;flex-grow: 1;height: 100%;width: calc(100% - 100px);align-items: center;justify-content: center;padding: 10px 50px;}
+
+.b-title {text-align: center;font-size: 6em;color: #fff;font-weight: bold;}
+
+.b-description {color: #cdcdcd;font-size: 56px;text-align: center;}
+
+.btn-box-green {margin-top: 20px; cursor: pointer;}
+
+a.btn-green {padding: 10px 20px;font-size: 20px;display: flex;align-items: center;padding: 10px 20px;background: #50B05A;border-radius: 50px;color: #fff;}
+
+a.btn-green > img {margin-left: 15px;height: 25px;width: auto;}
+
+@media screen and (max-width: 600px) {
+  .b-title{
+      font-size: 4em;
+  }
+
+  .b-description{
+      font-size: 2em;
+  }
+
+  .nav{
+    flex-direction: column;
+  }
+
+  .btn-box{
+    margin-top: 20px;
+  }
+
+  .menu{
+    margin-top:5px;
+  }  
 }
 
-.backanim > svg{
-    max-width: 100%;
-}
+@media screen and (min-width: 600px) and (max-width:900px) {
+  .b-title{
+      font-size: 5em;
+  }
 
-@media screen and (max-width: 600px){
-    /*.main{
-        background-size: contain;
-        background-image: url('../images/back-mobile.svg');
-    }
-    */
-
-    .backanim{
-        max-width: 100%;
-        height: auto;
-    }
-
-    .backanim.mobile-svg{
-        display: block;
-    }
-}
-
-@media screen and (min-width: 600px){
-    .backanim.pc-svg{
-        display: block;
-    }
+  .b-description{
+      font-size: 3em;
+  }
 }
