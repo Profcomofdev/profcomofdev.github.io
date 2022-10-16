@@ -115,7 +115,6 @@ a.btn-green > img {
 
 .about {
   padding: 10px 20px;
-  background: #3f3f3f;
 }
 
 .section-content {
@@ -124,7 +123,7 @@ a.btn-green > img {
 
 .about > .section-content {
   justify-content: space-between;
-  border: 2px solid #51b05a;
+  border: none;
   border-radius: 5px;
   margin: 10px 0px;
 }
@@ -132,7 +131,7 @@ a.btn-green > img {
 .fact-wrapper {
   max-width: 300px;
   text-align: center;
-  background: #3F3F3F;
+  background: linear-gradient(90deg, black, #3F3F3F);
   padding: 15px 20px;
   border-radius: 5px;
 }
@@ -164,11 +163,11 @@ a.btn-green > img {
 }
 
 .fact:first-child {
-  border-right: 2px solid #51b05a;
+  border-right: none;
 }
 
 .fact:last-child {
-  border-left: 2px solid #51b05a;
+  border-left: none;
 }
 
 .top_bar {
@@ -284,11 +283,11 @@ a.btn-green > img {
   }
   .fact:first-child {
     border-right: none;
-    border-bottom: 2px solid #51b05a;
+    border-bottom: none;
   }
   .fact:last-child {
     border-left: none;
-    border-top: 2px solid #51b05a;
+    border-top: none;
   }
   .fact {
     max-width: calc(100% - 40px);
