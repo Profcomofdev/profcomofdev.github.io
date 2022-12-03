@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width">
         <title>Дизайн круга</title>
     </head>
     <body>
@@ -186,6 +187,15 @@
             justify-content: center;
             align-items: center;
             background-color: var(--color-primary-dark);
+            }
+
+            @media screen and (max-width: 600px){
+                .svg-box > svg {
+                    max-width: 100%;
+                }
+                .svg-box {
+                    max-width: 100%;
+                }
             }
         </style>
         <script>
